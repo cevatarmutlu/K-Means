@@ -105,11 +105,11 @@ class KMeans:
                 a += 1
         wb.save('result.xlsx')
 
-
-k = KMeans(3, "../iris.xlsx", 0)
-k.calculate()
-k.print_cluster()
-k.excel_write()
+if __name__ == "__main__":
+    k = KMeans(3, "iris.xlsx", 0)
+    k.calculate()
+    k.print_cluster()
+    k.excel_write()
 
 
 
